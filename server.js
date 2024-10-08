@@ -34,3 +34,19 @@ const collectibles = [
 app.get('/shoes', (req, res) => {
 res.send ('collectibles')
 })
+
+app.get('/roll/6', (req, res) => {
+    res.send('you rolled a 6!')
+})
+
+app.get('/roll/20', (req, res) => {
+    res.send('you rolled a 20!')
+})
+
+app.get('0' , (req, res) => {
+    res.send('you must roll a higher number')
+})
+
+app.get('/collectibles/2' , (req, res) => {
+    res.send('This item is not instock')
+})
